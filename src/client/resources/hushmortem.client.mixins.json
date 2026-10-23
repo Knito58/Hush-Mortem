@@ -1,0 +1,17 @@
+{
+	"required": true,
+	"package": "de.knito.hushmortem.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"client": [
+		"ClientPacketListenerMixin",
+		"EntityBoundSoundInstanceAccessor",
+		"LivingEntityInvoker",
+		"SoundEngineMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

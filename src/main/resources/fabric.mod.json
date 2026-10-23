@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "hushmortem",
+	"version": "${version}",
+	"name": "Hush Mortem",
+	"description": "Dead mobs fall silent: an enderman's stare, a creeper's fuse hiss or a pillager's crossbow stops the moment the mob dies. Inspired by diskria's Shut Up Dead Entities.",
+	"authors": [
+		"Claude AI",
+		"Konitor"
+	],
+	"contributors": [
+		"diskria (idea: Shut Up Dead Entities)"
+	],
+	"contact": {
+		"homepage": "https://github.com/Knito58/Hush-Mortem",
+		"sources": "https://github.com/Knito58/Hush-Mortem",
+		"issues": "https://github.com/Knito58/Hush-Mortem/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/hushmortem/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"de.knito.hushmortem.HushMortemClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "hushmortem.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=${loader_version}",
+		"minecraft": "~${minecraft_version}",
+		"java": ">=25"
+	}
+}

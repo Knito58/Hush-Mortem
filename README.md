@@ -6,7 +6,7 @@ The idea comes from [Shut Up Dead Entities](https://modrinth.com/mod/shut-up-dea
 
 ## Requirements
 
-- Minecraft 26.3 (26.2 and 26.1.2 planned)
+- Minecraft 26.1.2, 26.2 or 26.3 (one jar for all three)
 - Fabric Loader 0.19.5 or newer
 - Java 25
 - Fabric API is **not** needed

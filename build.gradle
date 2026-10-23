@@ -2,7 +2,7 @@ plugins {
 	id 'net.fabricmc.fabric-loom' version "${loom_version}"
 }
 
-version = "${project.mod_version}+${project.minecraft_version}"
+version = project.mod_version
 group = project.maven_group
 
 base {
@@ -27,7 +27,7 @@ dependencies {
 }
 
 processResources {
-	def props = [version: project.mod_version, minecraft_version: project.minecraft_version, loader_version: project.loader_version]
+	def props = [version: project.mod_version, minecraft_range: project.minecraft_range, loader_version: project.loader_version]
 	inputs.properties props
 
 	filesMatching("fabric.mod.json") {

@@ -2,7 +2,7 @@
 
 A client-side Fabric mod for Minecraft. When a mob dies, the sounds it was still making stop with it: the enderman's stare, the creeper's fuse hiss, the pillager's crossbow loading.
 
-The idea comes from [Shut Up Dead Entities](https://modrinth.com/mod/shut-up-dead-entities) by [diskria](https://github.com/diskria-minecraft/shut-up-dead-entities). Hush Mortem is a separate implementation written from scratch, with diskria's permission.
+The idea comes from [Shut Up Dead Entities](https://github.com/diskria-minecraft/shut-up-dead-entities) by diskria. Hush Mortem is a separate implementation written from scratch, with diskria's permission.
 
 ## Requirements
 

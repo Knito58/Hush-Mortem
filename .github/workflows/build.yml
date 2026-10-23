@@ -2,6 +2,7 @@ name: build
 
 on:
   push:
+    branches: [main]
   pull_request:
 
 jobs:
@@ -19,3 +20,19 @@ jobs:
         with:
           name: hushmortem
           path: build/libs/
+
+  # The release jar is built against 26.3; make sure the same code still
+  # compiles against the older versions it claims to support.
+  compat:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        minecraft: ['26.1.2', '26.2']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 25
+      - uses: gradle/actions/setup-gradle@v4
+      - run: ./gradlew compileClientJava -Pminecraft_version=${{ matrix.minecraft }}
